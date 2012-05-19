@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+	<form-bean name="personalInformation"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="name" type="java.lang.String" />
+			<form-property name="first_name" type="java.lang.String" />
+			<form-property name="last_name" type="java.lang.String" />
+			<form-property name="email" type="java.lang.String" />
+			<form-property name="location" type="java.lang.String" />
+			<form-property name="work" type="java.lang.String" />
+			<form-property name="education" type="java.lang.String" />
+			<form-property name="hometown" type="java.lang.String" />
+			<form-property name="birthday" type="java.lang.String" />
+			<form-property name="gender" type="java.lang.String" />
+			<form-property name="picture" type="java.lang.String" />
+			<form-property name="friendsCount" type="java.lang.String" />
+			
+			
+		</form-bean>
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+		<exception scope="request" path="/requestAuth.do"
+            type="com.prokarma.exception.FacebookException" key="FacebookException"
+            handler="com.prokarma.FacebookExceptionHandler" />
+	</global-exceptions>
+
+	<global-forwards>
+		<forward name="failure" path="/common/JSP/failureJSP.jsp" contextRelative="true">
+		</forward>
+		<forward name="success" path="/common/JSP/successJSP.jsp" contextRelative="true">
+		</forward>
+		<forward name="successList" path="/common/JSP/sucessListJSP.jsp" contextRelative="true">
+		</forward>
+	</global-forwards>
+
+	<!-- Global Forwards -->
+	<!-- Action Mappings -->
+	<action-mappings>
+     <action path="/requestAuth"
+		        type="com.prokarma.action.RequestAuth">
+		    <forward name="success" path="requestAuth" />
+		</action>
+	 <action path="/enter" type="com.prokarma.action.InitAction"
+	        name="personalInformation" validate="false" scope="session">
+			<forward name="success" path="home" />
+	</action>
+	<action path="/activities" type="com.prokarma.action.MyActivitiesAction"
+	        name="personalInformation" validate="false" parameter="command" scope="session">
+			<forward name="friends" path="friends" />
+			<forward name="personalInformation" path="personalInformation" />
+	</action>
+	</action-mappings>
+    <controller processorClass="com.prokarma.CustomRequestProcessor" />
+	<!-- Message Resources -->
+	<message-resources parameter="com.nexstep.tne.master.resources.ApplicationResources"/>
+    <plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+	</plug-in>
+</struts-config>

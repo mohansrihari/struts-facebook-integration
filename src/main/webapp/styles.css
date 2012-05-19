@@ -1,0 +1,495 @@
+body{
+    font-family: Helvetica;
+}
+
+div, p, ul, li, h6, fieldset{
+    margin: 0;
+    padding: 0;
+}
+
+p, table, select, input{
+    font-size: 11px;
+}
+
+table{
+    table-layout: auto;
+    width: 100%;
+}
+
+table.borders{
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.borders th{
+    text-align: center;
+}
+
+table.borders th, table.borders td{
+    border-bottom: 1px solid #F6F5F9;
+}
+
+#container{
+    width: 310px;
+    margin: 0 auto;
+}
+
+#topNav{
+    height: 23px;
+    overflow: hidden;
+ }
+
+#topNav ul{
+    display: block;
+
+}
+
+#topNav li{
+    display: inline;
+    float: left;
+    background: #ffffff;
+    font-size: 11px;
+}
+
+#topNav li a{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 21px;
+    background: #000;
+    color: #ffffff;
+    margin: 0 3px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #afb1b6;
+}
+
+#topNav li a:hover, #topNav li.ui-state-active a, #topNav li a.active{
+    background: #3C5A9A
+}
+
+.ui-tabs-hide{
+    display: none;
+}
+
+.fullColumn{
+    clear: both;
+}
+
+.fullColumn-inner{
+    margin: 20px 10px;
+    width:98%;
+}
+
+.leftColumn{
+    clear: both;
+    float: left;
+    width: 49%;
+}
+
+.rightColumn{
+    float: right;
+    width: 49%;
+}
+
+/* Three-column layout */
+
+.ThreeColumnLeft, .ThreeColumnRight, .ThreeColumnMid{
+    float: left;
+}
+
+.ThreeColumnLeft, .ThreeColumnRight{
+    width: 33%;
+}
+
+.ThreeColumnMid{
+    width: 34%;
+}
+
+.ThreeColumnLeft-inner, .ThreeColumnRight-inner, .ThreeColumnMid-inner{
+    background: white;
+    padding: 20px 10px;
+    margin:0px 20px 0px 0px;
+    border: 1px solid #000;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+.ThreeColumnLeft-inner img, .ThreeColumnRight-inner img, .ThreeColumnMid-inner img{
+    display: block;
+    margin: 0px auto 20px auto;
+}
+
+.ThreeColumnLeft-inner a, .ThreeColumnRight-inner a, .ThreeColumnMid-inner a{
+    font-weight: bold;
+    color: #f7901e;
+}
+
+.ThreeColumn-captionText
+{
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;    
+}
+
+.ThreeColumn-bodyText
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #a4a4a4;
+    height: 72px;
+}
+
+.ThreeColumn-footerLink
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Two-Column layout */
+
+.TwoColumnLeft, .TwoColumnRight {
+    float: left;
+}
+
+.TwoColumnLeft, .TwoColumnRight{
+    width: 50%;
+}
+
+.TwoColumnLeft-inner, .TwoColumnRight-inner {
+    background: white;
+    padding: 20px;    
+    border: 1px solid #000;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+.TwoColumnLeft-inner {
+    margin:0px 20px 0px 0px;
+}
+
+.TwoColumnLeft-inner img, .TwoColumnRight-inner img {
+    display: block;
+    margin: 0px auto 20px auto;
+}
+
+.TwoColumnLeft-inner a, .TwoColumnRight-inner a {
+    font-weight: bold;
+    color: #f7901e;
+}
+
+.TwoColumn-captionText
+{
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.TwoColumn-bodyText
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #a4a4a4;
+}
+
+
+
+.leftColumn-inner, .rightColumn-inner{
+    margin: 10px;
+}
+
+#mainBody h2{
+    font-size: 16px;
+}
+
+#mainBody h6{
+    font-size: 12px;
+}
+
+p{
+    line-height: 18px;
+    margin: 20px 0;
+}
+
+#mainBody h3{
+    border-top: 2px solid #ADB8D2;
+    background: #D8DEEA;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 3px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+input.blue_back, button.blue_back, a.blue_back{
+    width: auto;
+    overflow: visible;
+    text-align: left;
+    background: #3C5A9A url(images/button_back.gif) repeat-x center left;
+    color: #ffffff;
+    border: 1px solid #396f7b;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 3px 40px 3px 30px;
+    -moz-border-radius: 3px;
+}
+
+form input.blue_back:hover, button.blue_back:hover, a.blue_back:hover{
+    border: 1px solid #c76b5c;
+    background: #000 url(images/buttonH_back.gif) repeat-x center left;
+    cursor: pointer;
+}
+
+a.blue_back{
+    text-decoration: none;
+    float: right;
+}
+
+span.blue_back{
+    color: #3C5A9A;
+    font-weight: bold;
+}
+
+
+
+input.blue, button.blue, a.blue{
+    width: auto;
+    overflow: visible;
+    text-align: left;
+    background: #3C5A9A url(images/button.gif) repeat-x center right;
+    color: #ffffff;
+    border: 1px solid #396f7b;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 3px 40px 3px 10px;
+    -moz-border-radius: 3px;
+}
+
+form input.blue:hover, button.blue:hover, a.blue:hover{
+    border: 1px solid #c76b5c;
+    background: #000 url(images/buttonH.gif) repeat-x center right;
+    cursor: pointer;
+}
+
+a.blue{
+    text-decoration: none;
+    float: right;
+}
+
+span.blue{
+    color: #3C5A9A;
+    font-weight: bold;
+}
+
+form label{
+    font-weight: bold;
+}
+
+form fieldset{
+    border: 0;
+    width: 100%;
+}
+
+form p{
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+input, select, textarea{
+    border: 1px solid #94A4C9;
+}
+
+form#newUser{
+    margin: 100px 100px;
+    padding: 20px;
+    background: #D8DEEA;
+}
+
+#profilePicBox{
+    overflow: auto; 
+    height: 175px;
+}
+
+#profilePicBox-inner{
+    padding: 10px 40px;
+}
+
+.profilePic{
+    width: 40%;
+    float: left;
+    margin: 10px 0;
+}
+
+.profilePic img{
+    display: block;
+    float: left;
+}
+
+#mainBody .profilePic p{
+    color: #3B5998;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 0 60px;
+}
+
+#mainBody .blueBox{
+    background: #FEB699 url(images/homeBG.gif) repeat-x top left;
+    padding: 10px;
+    margin: 10px 0;
+    clear: both;
+    -moz-border-radius: 5px;
+}
+
+#mainBody .blueBox a{
+    font-weight: bold;
+    color: #000;
+    margin-left: 5px;
+}
+
+#mainBody .blueBox h6{
+    color: #0d2a60;
+}
+
+#mainBody .blueBox p{
+    margin: 0;
+    color: #0d2a60;
+    font-weight: bold;
+}
+
+#modal{
+    border: 5px solid #ffded0;
+    width: 400px;
+    margin: auto;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 40%;
+    margin-top: -150px;
+    z-index: 200;
+}
+
+#modal-inner{
+    background: #ffffff url('images/alert_head.gif') repeat-x top left; 
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+#modal h2{
+    background: url("images/icon.gif") no-repeat center left;
+    padding: 0 25px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3C5A9A;
+}
+
+#modal p{
+    margin: 20px;
+}
+
+#errorMsg{
+    border: 5px solid #ffded0;
+    width: 250px;
+    margin: auto;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 40%;
+    margin-top: -75px;
+    z-index: 200;
+}
+
+#errorMsg-inner{
+    background: #ffffff url('images/alert_head.gif') repeat-x top left; 
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#errorMsg-inner p{
+    font-weight: bold;
+    color: red;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#overlay{
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+select.error, input.error{
+    border: 1px solid red;
+}
+
+label.error{
+    color: red;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+div.emailList{
+    border: 1px solid #94A4C9;
+}
+
+p.emailAddrPrv{
+    padding: 0;
+    margin: 0;
+}
+
+#emailList p{
+    margin: 2px 5px;
+    padding: 2px 5px;
+    line-height: 14px;
+    border: 1px solid #fff;
+}
+
+#emailList p.hover{
+    background: #bfc4ce url(images/delete.gif) no-repeat 98% 50%;
+    border: 1px solid #9fa9c0;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+
+span.formLabelContainer {
+    display: inline-block;
+    width: 125px;
+}
+
+span.formHint {
+  font-weight:bold;
+  font-size:smaller;
+  color:#777;
+  width:10px;
+}
+
+.faqContainer {
+    width:480px;
+}

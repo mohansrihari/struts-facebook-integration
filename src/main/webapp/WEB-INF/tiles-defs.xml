@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+"http://jakarta.apache.org/struts/dtds/tiles-config_1_3.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" page="/common/JSP/layout.jsp">
+		<put name="pageTitle" type="string" value="Home" />
+	</definition>
+	<definition name="home" extends="base.definition">
+		<put name="pageTitle" type="string" value="Home" />
+		<put name="body" value="/web/jsp/home.jsp" />
+	</definition>
+	  <definition name="requestAuth" extends="base.definition">
+		<put name="pageTitle" type="string" value="Log In" />
+		<put name="body" value="/requestAuth.jsp" />
+	</definition>
+	<definition name="personalInformation" extends="base.definition">
+		<put name="pageTitle" type="string" value="Log In" />
+		<put name="body" value="/web/jsp/personalInformation.jsp" />
+	</definition>
+	<definition name="friends" extends="base.definition">
+		<put name="pageTitle" type="string" value="FRIENDS" />
+		<put name="body" value="/web/jsp/friends.jsp" />
+	</definition>
+</tiles-definitions>
