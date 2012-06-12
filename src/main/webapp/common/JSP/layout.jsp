@@ -1,8 +1,8 @@
-<%@page import="com.prokarma.common.Context"%>
+<%@page import="com.mohansrihari.common.Context"%>
 <%@ taglib uri="http://struts.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
-<%@ taglib prefix="pu" uri="ProkarmaUtil"%>
+<%@ taglib prefix="pu" uri="mohansrihariUtil"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,7 +53,7 @@
 
        <div id="container">
             <div id="header" style="padding-bottom:10px;">
-                <img src="images/prokarma_logo.png"/>
+                <img src="images/logo.png"/>
             </div>
             <div id="topNav">
                 <ul>
@@ -80,7 +80,7 @@
             <br/>
             
             <div align="center" style="font-size: 9px;">
-                 <a href="#" style="color: #000000;">Prokarma Softech</a>                 
+                 <a href="#" style="color: #000000;">mohansrihari Softech</a>                 
             </div>
             
         </div>

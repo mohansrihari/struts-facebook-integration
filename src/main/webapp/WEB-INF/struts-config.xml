@@ -30,8 +30,8 @@
 	<!-- Global Exceptions -->
 	<global-exceptions>
 		<exception scope="request" path="/requestAuth.do"
-            type="com.prokarma.exception.FacebookException" key="FacebookException"
-            handler="com.prokarma.FacebookExceptionHandler" />
+            type="com.mohansrihari.exception.FacebookException" key="FacebookException"
+            handler="com.mohansrihari.FacebookExceptionHandler" />
 	</global-exceptions>
 
 	<global-forwards>
@@ -47,20 +47,20 @@
 	<!-- Action Mappings -->
 	<action-mappings>
      <action path="/requestAuth"
-		        type="com.prokarma.action.RequestAuth">
+		        type="com.mohansrihari.action.RequestAuth">
 		    <forward name="success" path="requestAuth" />
 		</action>
-	 <action path="/enter" type="com.prokarma.action.InitAction"
+	 <action path="/enter" type="com.mohansrihari.action.InitAction"
 	        name="personalInformation" validate="false" scope="session">
 			<forward name="success" path="home" />
 	</action>
-	<action path="/activities" type="com.prokarma.action.MyActivitiesAction"
+	<action path="/activities" type="com.mohansrihari.action.MyActivitiesAction"
 	        name="personalInformation" validate="false" parameter="command" scope="session">
 			<forward name="friends" path="friends" />
 			<forward name="personalInformation" path="personalInformation" />
 	</action>
 	</action-mappings>
-    <controller processorClass="com.prokarma.CustomRequestProcessor" />
+    <controller processorClass="com.mohansrihari.CustomRequestProcessor" />
 	<!-- Message Resources -->
 	<message-resources parameter="com.nexstep.tne.master.resources.ApplicationResources"/>
     <plug-in className="org.apache.struts.tiles.TilesPlugin">

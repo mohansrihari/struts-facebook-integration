@@ -2,7 +2,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-html-el" prefix="html"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
-<%@ taglib prefix="pu" uri="ProkarmaUtil"%>
+<%@ taglib prefix="pu" uri="mohansrihariUtil"%>
 
 <html:xhtml />
 <script type="text/javascript">
