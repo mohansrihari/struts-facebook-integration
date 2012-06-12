@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+ 
+<tlib-version>1.0</tlib-version>
+ <short-name>mohansrihariutil</short-name>
+ <uri>mohansrihariUtil</uri>
+ <tag>
+   <name>contextProperty</name>
+   <tag-class>com.mohansrihari.tags.ContextProperty</tag-class>
+   <body-content>scriptless</body-content>
+   <attribute>
+       <name>name</name>
+       <rtexprvalue>true</rtexprvalue>
+       <required>false</required>
+    </attribute> 
+ </tag>
+ <tag>
+   <name>feedDialog</name>
+   <tag-class>com.mohansrihari.tags.facebook.FeedDialog</tag-class>
+   <body-content>scriptless</body-content>
+   <attribute>
+       <name>dialogType</name>
+       <rtexprvalue>true</rtexprvalue>
+       <required>false</required>
+    </attribute> 
+ </tag>
+</taglib>
